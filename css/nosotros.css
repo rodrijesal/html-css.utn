@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+  }
+  .holder{
+    max-width: 960px;
+    margin: auto;
+
+}
+  button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+  }
+  
+  button:hover {
+    background-color: rgb(101, 33, 165);
+  }
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  header {
+    /* background-color: rgb(245,245,245);*/
+  
+    height: 70px;
+  }
+  
+  header .logo {
+    margin: 0;
+    padding: 10px 0 0 10px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 3em;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    /* background-color: rgb(245,245,245);*/
+    background-image: url("/imagenes/madera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header a {
+    padding: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+  }
+  
+  header a:hover {
+    color: blueviolet;
+  }
+  
+  header nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+/*hasta aqui el header*/
+
+/*main*/
+
+.holder{
+  max-width: 960px;
+  margin: 0 auto;
+}
+h2{
+  text-align: center;
+  
+  font-size: 3em;
+}
+
+.personas{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.persona{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 20%;  
+  text-align: center; 
+  padding: 5px; 
+  box-sizing: border-box;
+}
+
+.persona img{
+  border-radius: 50px;
+  max-width: 65%;
+  box-shadow: 0 0 5px black;
+  margin: 13px 0 16px;
+
+}
+
+
+.persona h5,
+.persona h6{
+  color: lightblue;
+  font-weight: normal;
+  margin: 0;
+}
+.persona h5{
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.persona h6{
+  font-style: italic;
+}
+
+.persona p{
+  font-size: 12px;
+  line-height: 14px;
+
+}
+footer .container {
+  background-image: url("/imagenes/madera3.jpg");
+      max-width: 100%;
+      height: 70px;
+     /* background-color: aquamarine;*/
+      justify-content: center;
+      align-items: flex-end;
+      text-align: center;
+      
+    }
+    footer p{
+      margin-top: 10px;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+  }
+  @media screen and (max-width:850px) {
+    /*aqui van todas las modificaciones de movil*/
+   
+    main.holder{
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+
+    .personas{
+        flex-wrap: wrap;
+    }
+
+    .persona{
+        width: 47%;
+        margin-bottom: 10px;
+    }
+
+    footer .container {
+      background-image: url("/imagenes/madera3.jpg");
+          max-width: 100%;
+          height: 70px;
+         /* background-color: aquamarine;*/
+          justify-content: center;
+          align-items: flex-end;
+          text-align: center;
+          
+        }
+        footer p{
+          margin-top: 10px;
+          padding: 20px;
+          color: white;
+          text-align: center;
+          font-size: 30px;
+}
+  }

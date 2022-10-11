@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecto bar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+      integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="logo">CLOT BAR</p>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="galeria.html">Galeria</a>
+          <a class="activo" href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="contacto">
+      <div class="img-contacto">
+        <img src="/imagenes/galeria/brujas-cocktail-bar-cdmx-casa-de-las-brujas-cdmx-donde-como-llegar.jpg" alt="" class="imagen"/>
+      </div>
+
+      <div class="titulo">
+        <h1 class="contacto_titulo">deja tu mensaje</h1>
+
+        <form action="" class="formulario">
+
+          <div class="linea">
+            <label for="name" class="cont-label">Nombre</label>
+            <input type="text" name="name" id="name" class="cont-input" />
+          </div>
+
+          <div class="linea">
+            <label for="email" class="cont-label">Email</label>
+            <input type="email" name="email" id="email" class="cont-input" />
+           </div> 
+             
+              
+              
+           
+         
+          <div class="linea">
+            <label for="subject" class="cont-label">Sujeto</label>
+            <input type="text" name="subject" id="subject" class="cont-input"/>
+          </div>
+
+          <div class="linea">
+            <label for="message" class="cont-label">Mensaje</label>
+            <textarea type="text" name="message" id="message" class="textarea"></textarea>
+          </div>
+
+          <input type="submit"  value="Send message" class="button"/>
+
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; diseñado por jesus rodriguez 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
